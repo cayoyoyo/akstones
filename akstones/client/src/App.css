@@ -1,0 +1,35 @@
+@font-face {
+  font-family: 'LEMON MILK Regular';
+  src: url('../fonts/LEMONMILK-Regular.otf') format('opentype');
+}
+
+/* Fuente Light Italic */
+@font-face {
+  font-family: 'LEMON MILK Light Italic';
+  src: url('../fonts/LEMONMILK-LightItalic.otf') format('opentype');
+}
+
+  @font-face {
+    font-family: 'LEMON MILK Light';
+    src: url('../fonts/LEMONMILK-Light.otf') format('opentype');
+  }
+
+  @font-face {
+    font-family: 'Gabarito Medium';
+    src: url('../fonts/Gabarito-Medium.ttf') format('opentype');
+  } 
+
+  @font-face {
+    font-family: 'Gabarito';
+    src: url('../fonts/Gabarito-VariableFont_wght.ttf') format('opentype');
+  } 
+  @font-face {
+    font-family: 'LibreBaskerville';
+    src: url('../fonts/LibreBaskerville-Regular.ttf') format('opentype');
+  } 
+  
+
+  body {
+background-color: #f7f7f7 !important; 
+ }
+

@@ -1,0 +1,89 @@
+.navbar {
+  background-color: #fff;
+  border-radius: 20px;
+  margin-top: 10px;
+  margin-left: 50px;
+  margin-right: 50px;
+  /* box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); */
+  font-family: 'LEMON MILK Light', sans-serif;
+  display: flex;
+  align-items: center; 
+  padding: 0px;
+  max-height: 80px;
+
+ 
+  
+}
+
+.custom-link {
+  text-decoration: none;
+  color: #283A7F !important;
+  padding:  15px !important;
+  border-radius: 30px;
+  transition: color 0.3s;   
+}
+
+
+
+.custom-link:hover {
+  color: #f49420 !important;
+  
+}
+
+
+.nav-links-container {
+  display: flex;
+  align-items: center;
+    border-radius: 30px;
+
+}
+
+.logo {
+  width: 60px;
+  height: 60px;
+  
+  margin-left: 100px;
+  
+
+}
+
+/* Aplica ml-auto para alinear los enlaces a la derecha */
+.nav-links {
+  margin-left: auto;
+  margin-right: 30px;
+}
+
+
+/* Aplica un margen derecho al icono del menú hamburguesa */
+.navbar-toggler-icon {
+ 
+  font-size: 1rem; /* Ajusta el tamaño del icono según tus preferencias */
+  cursor: pointer; /* Cambia el cursor al pasar el mouse por encima */
+  border: none !important; /* Quita el borde */
+  background-color: transparent !important;
+}
+
+
+
+/* Media Query para pantallas más pequeñas (ejemplo: dispositivos móviles) */
+@media (max-width: 1000px) {
+  .navbar {
+    flex-direction: row; /* Cambia de columna a fila para el logotipo y el botón de hamburguesa */
+    align-items: center;
+    text-align: center ;
+    justify-content: space-around !important; 
+    margin: 10px -5px 30px 10px;    
+    max-height: 800px;
+    
+  }
+
+  .logo {
+    width: 60px;
+    height: 60px;
+    margin-left: 0px;
+  
+  }
+
+}
+
+

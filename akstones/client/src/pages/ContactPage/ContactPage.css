@@ -1,0 +1,241 @@
+/* Estilos para pantallas grandes */
+
+.contact-us {
+  display: flex;
+  background-color: #fff;
+  color: #283a7f;
+  border-radius: 20px;
+  margin: 30px 50px;
+  padding: 0px;
+  align-items: center;
+  justify-content: center; /* Centra los elementos horizontalmente */
+}
+
+.contact-us h2 {
+  font-size: 30px;
+  color: #000;
+  margin-bottom: 10px;
+  font-family: 'LibreBaskerville';
+}
+
+.contact-us hr {
+  width: 80%;
+  margin: 10px 0;
+  padding: 20px;
+  color: #f49420;
+}
+
+
+.contact-us p {
+  font-size: 16px;
+  text-align: center;
+  font-family: 'LibreBaskerville';
+  margin-left: 0;
+  color: #000;
+}
+
+.call-text {
+  color: #000;
+}
+
+.phone-number {
+  color: #1b73e8;
+}
+
+.email {
+  font-size: 18px !important;
+}
+
+.contact-us img {
+  max-width: 40%;
+  border-radius: 20px;
+  margin: 20px;
+  flex: 1;
+}
+
+
+.contact-info {
+  flex: 1;
+  margin: 50px;
+  padding: 5px;
+  font-size: 22px;
+
+  width: 80%;
+  max-width: 700px;
+}
+
+.opening-hours {
+  background-color: #ffffff;
+  color: #283a7f;
+  border-radius: 20px;
+  margin: 30px 50px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'LEMON MILK Light', sans-serif;
+  flex-wrap: wrap;
+}
+
+.left-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 55%; /* Adjust this width as needed */
+}
+
+.left-section h2 {
+  margin-bottom: 40px;
+  text-decoration: underline;
+  color: #f49420;
+}
+
+
+.specific-img {
+  max-width: 40%; 
+  border-radius: 20px; 
+  margin-right: 10px;
+}
+
+
+.large-img {
+  max-width: 60%;
+}
+
+/* div 3 */
+
+.map-container {
+  background-color: #ffffff;
+  color: #283a7f;
+  border-radius: 20px;
+  margin: 30px 50px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'LEMON MILK Light', sans-serif;
+  flex-wrap: wrap;
+}
+
+
+.map-img {
+  max-width: 50%;
+  height: auto;
+  transition: transform 0.3s ease-in-out; /* Agregamos transición para suavizar el cambio */
+}
+
+ .map-img:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+} 
+
+
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 1200px) {
+  .contact-us {
+    flex-direction: column-reverse;
+    text-align: center;
+    margin: 10px 0px 30px 10px;    
+  }
+
+  .contact-us img {
+    max-width: 90%;
+    margin-top: -20px;
+  }
+
+  .contact-us h2 {
+    font-size: 28px;
+    font-family: 'LibreBaskerville';
+  }
+
+  .contact-us hr {
+    width: 100%;
+  }
+
+  .contact-us p {
+    font-size: 16px;
+    text-align: center;
+   padding: 10px;
+    color: #000;
+  }
+
+  .call-text {
+    color: #000;
+  }
+
+  .phone-number {
+    color: #1b73e8;
+  }
+
+  .email {
+    font-size: 18px !important;
+  }
+
+
+  
+  .opening-hours {
+    flex-direction: column; /* Cambia la dirección a columna */
+    align-items: center; /* Centra los elementos */
+    text-align: center; /* Alinea el texto al centro */
+    margin: 10px 0px 30px 10px;    
+  
+}
+
+.left-section {
+  max-width: 70%; /* Ajusta el ancho al 100% */
+  align-items: center; /* Centra los elementos */
+  text-align: center; /* Alinea el texto al centro */
+  margin-bottom: 20px;
+}
+
+.left-section h2 {
+  margin-bottom: 20px; /* Aumenta el espacio inferior */
+}
+
+.specific-img {
+  max-width: 100%; /* Haz que las imágenes sean responsive */
+  border-radius: 20px;
+  margin: 10px 0; /* Ajusta los márgenes entre imágenes */
+}
+
+
+
+}
+
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    transform: scale(0.8);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+.contact-info h2,
+.contact-info p,
+.opening-hours h3,
+.opening-hours .day,
+.opening-hours .hour {
+  opacity: 0;
+  animation: fadeIn 0.6s ease-in-out forwards;
+}
+
+.map-img,
+.specific-img {
+  transform: scale(0.8);
+  animation: scaleIn 0.6s ease-in-out forwards;
+}
