@@ -1,0 +1,72 @@
+/* Footer.css */
+
+/* Estilos para pantallas grandes */
+.footer-bg {
+  
+  border-radius: 20px;
+
+  padding: 80px;
+  font-family: 'LEMON MILK Light', sans-serif;
+  display: flex;
+  align-items: center;
+ 
+
+}
+
+.logo-container-f {
+  flex: 1; 
+  text-align: center;
+ margin-top: 10px;
+}
+
+.contact-info-f {
+  flex: 1; /* Ajusta la sección de contacto para que ocupe espacio */
+  text-align: right; /* Alinea la información de contacto a la derecha */
+}
+.contact-info-f a {
+  color: #1b73e8 !important;
+}
+
+.rights-reserved {
+  font-size: 14px;
+  text-align: center;
+}
+
+
+/* Media Query para pantallas pequeñas (dispositivos móviles) */
+@media (max-width:1000px) {
+  /* Estilos para pantallas pequeñas ya existentes */
+  .footer-bg {
+    flex-direction: column-reverse;
+    text-align: center;
+   
+    
+  }
+
+  .logo-container {
+    padding-top: 10px;
+   
+  }
+  
+  .rightbo-reserved {
+    
+    font-size: 12px;
+    text-align: center;
+    
+  }
+
+
+  .contact-info-f {
+    text-align: left !important;
+    font-size: 14px;
+   
+  }
+  
+  .contact-info-f a {
+    color: #1b73e8 !important;
+    text-decoration: none;
+  }
+
+
+ 
+}

@@ -1,0 +1,249 @@
+/* Estilos para pantallas más pequeñas (móviles) */
+.gallery-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #FFF;
+  border-radius: 20px;
+  margin: 10px 0px 30px 10px;
+  padding: 20px;
+  font-family: 'LibreBaskerville';
+  color: #283A7F;
+}
+
+.gallery-container > div {
+  width: 100%;
+}
+
+.gallery-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+
+  font-size: 35px;
+  opacity: 0;
+  animation: fadeIn 0.6s ease-in-out forwards;
+}
+.highlight-stones {
+  color: #f49420;
+}
+.gallery-container p {
+  text-align: left;
+  font-family: 'LibreBaskerville';
+  color: #000;
+}
+
+.gallery-container img {
+  width: 100%;
+  max-width: 850px;
+  border-radius: 20px;
+  margin-top: 20px;
+  transform: scale(0.8); /* Inicia con una escala menor */
+  animation: scaleIn 0.6s ease-in-out forwards;
+}
+
+/* .gallery-container2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #FFF;
+  border-radius: 20px;
+  margin: 10px 0px 30px 10px;
+  padding: 20px;
+  font-family: 'LibreBaskerville';
+  color: #283A7F;
+}
+
+.gallery-container2 .content-left,
+.gallery-container2 .content-right {
+  width: 100%;
+}
+
+.gallery-container2 h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  font-size: 35px;
+  color: #f49420;
+}
+
+.gallery-container2 p {
+  text-align: left;
+  font-family: 'LibreBaskerville';
+  color: #000;
+}
+
+.gallery-container2 img {
+  width: 100%;
+  max-width: 850px;
+  border-radius: 20px;
+  margin-top: 20px;
+} */
+
+.gallery-container3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* background-color: #FFF; */
+  border-radius: 20px;
+ 
+  padding: 20px;
+  font-family: 'LEMON MILK Regular';
+  color: #000;
+}
+
+/* Ajustes para el carrusel */
+.carousel {
+  width: 100%;
+  max-width: 800px; /* Ancho máximo del carrusel, ajusta según tus necesidades */
+  margin: auto; /* Centrar horizontalmente */
+}
+
+.carousel .carousel-inner {
+  width: 100%;
+}
+
+.carousel-item {
+  text-align: center;
+}
+
+.carousel-item iframe {
+  width: 100%; /* Hace que el iframe se ajuste al ancho del contenedor */
+}
+
+
+/* Estilos para pantallas más grandes */
+@media (min-width: 1000px) {
+  .gallery-container {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 30px 50px;
+  }
+
+  .gallery-container p {
+    width: 100%;
+    max-width: 430px;
+    align-items: center;
+    margin: 40px 80px;
+  }
+
+  .highlight-stones {
+    color: #f49420;
+  }
+
+  .gallery-container hr {
+    color: #000;
+  }
+
+  .gallery-container > div {
+    width: 48%;
+  }
+
+  .gallery-container img {
+    width: 100%;
+    max-width: 100%;
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-left: auto;
+    display: block;
+  }
+
+  .gallery-container div:first-child {
+    margin-right: 20px;
+  }
+/* 
+  .gallery-container2 {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin: 30px 50px;
+  }
+
+  .gallery-container2 .content-left {
+    width: 48%;
+    margin: 140px 40px 0px 70px ;
+  }
+
+   .gallery-container2 .content-right {
+    width: 58%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center
+  }
+
+  .gallery-container2 h2 {
+    margin-bottom: 50px;
+ color: #f49420;
+  ;
+  }
+
+  .gallery-container2 p {
+    font-size: 18px;
+  }
+ 
+
+  .gallery-container2 img {
+    width: 100%;
+    max-width: 100%;
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-left: auto;
+    display: block;
+  } */
+  
+  .gallery-container3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: #FFF; */
+    border-radius: 20px;
+    margin: 80px 50px;
+    padding: 20px;
+    font-family: 'LEMON MILK Regular';
+    color: #000;
+  }
+  
+  /* Ajustes para el carrusel */
+  .carousel {
+    width: 100%;
+    max-width: 800px; /* Ancho máximo del carrusel, ajusta según tus necesidades */
+    margin: auto; /* Centrar horizontalmente */
+  }
+  
+  .carousel .carousel-inner {
+    width: 100%;
+  }
+  
+  .carousel-item {
+    text-align: center;
+  }
+  
+  .carousel-item iframe {
+    width: 100%; /* Hace que el iframe se ajuste al ancho del contenedor */
+  }
+  
+}
+
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    transform: scale(0.8);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
